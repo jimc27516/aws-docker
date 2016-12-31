@@ -1,0 +1,10 @@
+version: '2'
+services:
+  scaffold-docker:
+    image: jimc27516/scaffold-docker
+    cpu_shares: 1024
+    mem_limit: 5242880000
+    entrypoint: 'grails'
+    command: 'run'
+    ports:
+      - "8080:8080"
