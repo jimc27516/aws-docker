@@ -8,6 +8,6 @@ THECMD="ecs-cli up --keypair DevAdmin-key-pair --capability-iam --size 1 --insta
 echo $THECMD
 `$THECMD`
 
-COMPOSEUP="aws docker jcampbell$ ecs-cli compose --file ./docker-compose.yml --project-name scaffold-docker service up"
+COMPOSEUP="ecs-cli compose --file ./docker-compose.yml --project-name scaffold-docker service up"
 echo $COMPOSEUP
 `$COMPOSEUP`
